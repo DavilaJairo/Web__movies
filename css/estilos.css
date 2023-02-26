@@ -7,16 +7,6 @@ box-sizing: border-box; }
 .body{
   background-color: #000;
   color: #fff;}
-  .body__info {
-    background-color: #000;
-    color: #fff;
-    padding-top: 20px;
-    padding-bottom: 0px;
-    text-align: center; }
-  .body__p {
-    margin-bottom: 0rem;
-    padding: 15px;
-    font-size: 0.8rem; }
 /*--------------------navegacion------------------------*/
 .navbar {
   position: relative;
@@ -54,11 +44,9 @@ box-sizing: border-box; }
 
 .section__gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(160px, 2fr));
   padding-top: 2rem;
-  gap: 10px;
-  
-}
+  gap: 10px; }
 .section__gallery-item{
   position: relative; }
 .section__gallery-title{
@@ -69,7 +57,7 @@ box-sizing: border-box; }
   background: linear-gradient(348deg, black, transparent);
   width: 100%;
   margin: 0;
-  padding: 10px;}
+  padding: 20px;}
 .section__gallery-img{
   width: 100%;
   height: 100%;
@@ -93,7 +81,30 @@ box-sizing: border-box; }
   .footer__redes:hover {
     color: #ff0d5d; }
 
-
+.pagination {
+    --bs-pagination-padding-x: 0.75rem;
+    --bs-pagination-padding-y: 0.375rem;
+    --bs-pagination-font-size: 1rem;
+    --bs-pagination-color: #e01a1a;
+    --bs-pagination-bg: #000;
+    --bs-pagination-border-width: var(--bs-border-width);
+    --bs-pagination-border-color: #f8f9fa;
+    --bs-pagination-border-radius: var(--bs-border-radius);
+    --bs-pagination-hover-color: #d10000;
+    --bs-pagination-hover-bg: rgb(0 0 0 / 13%);
+    --bs-pagination-hover-border-color: rgb(0 0 0 / 13%);
+    --bs-pagination-focus-color: #f8f9fa;
+    --bs-pagination-focus-bg: rgb(0 0 0 / 13%);
+    --bs-pagination-focus-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    --bs-pagination-active-color: #fff;
+    --bs-pagination-active-bg: #0a58ca;
+    --bs-pagination-active-border-color: #0d6efd;
+    --bs-pagination-disabled-color: #f8f9facf;
+    --bs-pagination-disabled-bg: rgb(0 0 0 / 13%);
+    --bs-pagination-disabled-border-color: #b02a37;
+    display: flex;
+    padding-left: 0;
+    list-style: none;}
 
 
 
